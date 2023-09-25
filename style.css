@@ -1,0 +1,260 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* carouse banner color and img */
+
+.back{
+  background: linear-gradient(rgba(244, 244, 245, 0.32),rgb(5, 4, 63)),url(image/com-b/banner1.png);
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+/* carouse banner color and img */
+
+
+/* navbar section start */
+
+.navbar-nav  a{
+color: black;
+font-weight:  600;
+font-size: 15px;
+}
+.navbar-nav a:hover{
+    text-decoration: overline dotted;
+    color: rgb(6, 6, 134);
+}
+.active{
+    text-decoration: overline dotted;
+    color: rgb(1, 1, 48);
+}
+
+
+/* navbar section end */
+
+
+
+
+
+
+
+
+
+
+
+/* dropdown section start */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+}
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* dropdown section end */
+
+/* carousel button section start */
+.btn-view{
+    padding: 7px 36px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    color: black;
+    text-decoration: none;
+   text-transform: capitalize;
+}
+.btn-view:hover{
+    background-color: rgb(40, 43, 196);
+    color: white;
+}
+
+/* carousel button section end */
+
+/* about card start */
+.card{
+  -webkit-box-shadow: 0px 12px 26px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 12px 26px -6px rgba(0,0,0,0.75);
+  box-shadow: 0px 12px 26px -6px rgba(0,0,0,0.75);
+
+}
+.card:hover{
+    border: 2px dashed gray;
+}
+/* about card end */
+
+
+
+/* gallery section start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    background-color: #585758;
+    z-index: 0;
+  }
+  p {
+    color: #000000;
+  }
+  /* -----------------------------------
+        Gallery Section
+  --------------------------------------*/
+  .portfolio-section {
+    padding: 50px 0;
+    background-color: #d8d8f0;
+  }
+  .portfolio-section h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #e0e0e0;
+    text-transform: uppercase;
+  }
+  .portfolio-menu {
+    text-align: center;
+  }
+  .control {
+    box-shadow: 2px 8px 16px gray;
+    background: #505058;
+    color: #fff;
+    padding: 5px 10px;
+    border: 1px solid #343a40;
+    border-radius: 3px;
+    margin: 5px;
+    cursor: pointer;
+    -webkit-transition: all 05s ease;
+    -moz-transition: all 05s ease;
+    -ms-transition: all 05s ease;
+    -o-transition: all 05s ease;
+    transition: all 0.5s ease;
+  }
+  .control:hover {
+    background: #a4a4a8;
+  }
+  .mixitup-control-active {
+    color: #ffffff;
+    background: #555b61;
+  }
+  .fancybox-container button:focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .portfolio-item {
+    padding-top: 30px;
+  }
+  .pd {
+    padding: 0;
+    padding: 10px;
+  }
+  .pd img {
+    height: 180px;
+    transition: all 0.5s;
+  }
+  .portfolio-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    visibility: hidden;
+    transition: all 0.5s;
+    transform: scale(0);
+  }
+  .portfolio-overlay p,
+  .portfolio-overlay a {
+    position: relative;
+    z-index: 4;
+  }
+  .portfolio-overlay::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    transition: 50ms height ease 150ms;
+    z-index: 3;
+  }
+  .portfolio-overlay::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 0;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+    transition: 100ms width ease 200ms;
+    z-index: 3;
+  }
+  .portfolio-item:hover .portfolio-overlay::before {
+    width: 80%;
+    height: 80%;
+    border-top: 1px solid #50977f;
+    border-right: 1px solid #50977f;
+    transition: width 0.1s ease 0.3s, height 0.1s ease 0.5s;
+  }
+  .portfolio-item:hover .portfolio-overlay::after {
+    width: 80%;
+    height: 80%;
+    border-bottom: 1px solid #50977f;
+    border-left: 1px solid #50977f;
+    transition: width 0.1s ease 0.6s, height 0.1s ease 0.7s;
+  }
+  .portfolio-item li:hover .portfolio-overlay {
+    visibility: visible;
+    transform: scale(1);
+  }
+  .portfolio-overlay .category {
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+  }
+  .portfolio-overlay .magnify-icon {
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: #50977f;
+    margin: 0 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: all 0.25s;
+  }
+  .portfolio-overlay .magnify-icon:hover {
+    background: #000;
+  }
+  .portfolio-overlay .magnify-icon p span i {
+    font-size: 15px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+  }
+  
+  /*******Responsive media query******/
+  
+  /* Extra small devices (portrait phones, less than 576px)*/
+  
+/* gallery section end */
+
+
+/* portfulio banner section start */
+.port-banner{
+  background: linear-gradient(rgba(199, 72, 72, 0.32),rgba(231, 64, 58, 0.32)), url(image/com-b/banner1.png);
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-attachment: fixed;
+};
+/* portfulio banner section end */
